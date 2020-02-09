@@ -1,16 +1,14 @@
 package szu.panda.observer.weather.service;
 
 
-import org.springframework.stereotype.Service;
 import szu.panda.observer.weather.observer.CurrentConditionsDisplay;
 import szu.panda.observer.weather.observer.ForecastDisplay;
 import szu.panda.observer.weather.observer.StatisticsDisplay;
 import szu.panda.observer.weather.subject.WeatherData;
 
-@Service
 public class WeatherStation {
 
-	public void WeatherStation() {
+	public static void weatherObserve() {
 		WeatherData weatherData = new WeatherData();
 	
 		CurrentConditionsDisplay currentDisplay =
